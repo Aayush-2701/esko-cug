@@ -38,6 +38,18 @@ class TestPackGuardApp(unittest.TestCase):
         self.assertIn('supported_artwork', data)
         print(f"Test 2 Passed: GET /api/status (Gemini configured: {data['gemini_configured']}).")
 
+    def test_02b_health_route(self):
+        """Test GET /health returns 200 and security headers are injected."""
+        res = self.client.get('/health')
+        self.assertEqual(res.status_code, 200)
+        data = res.get_json()
+        self.assertEqual(data['status'], 'healthy')
+        self.assertEqual(data['app_name'], 'PackGuard AI')
+        # Verify security headers
+        self.assertEqual(res.headers.get('X-Content-Type-Options'), 'nosniff')
+        self.assertEqual(res.headers.get('X-Frame-Options'), 'SAMEORIGIN')
+        print("Test 2b Passed: GET /health returns 200 OK with security headers.")
+
     def test_03_sample_route(self):
         """Test GET /api/sample returns sample rulebook and GET /api/samples lists presets."""
         res_list = self.client.get('/api/samples')

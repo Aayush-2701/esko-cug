@@ -13,6 +13,7 @@ import os
 import json
 from flask import Flask, render_template, request, jsonify
 from werkzeug.utils import secure_filename
+from werkzeug.middleware.proxy_fix import ProxyFix
 from dotenv import load_dotenv
 
 # Load environment configuration
@@ -22,9 +23,22 @@ import analyzer
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
 
+# Enable reverse proxy support for Render, Cloudflare, Nginx
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
+
 # File upload restrictions: 32MB max
 MAX_CONTENT_LENGTH = 32 * 1024 * 1024
 app.config["MAX_CONTENT_LENGTH"] = MAX_CONTENT_LENGTH
+
+
+@app.after_request
+def apply_security_headers(response):
+    """Inject production HTTP security headers."""
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "SAMEORIGIN"
+    response.headers["X-XSS-Protection"] = "1; mode=block"
+    response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    return response
 
 ALLOWED_ARTWORK_EXTENSIONS = {".png", ".jpg", ".jpeg", ".pdf", ".webp"}
 ALLOWED_RULEBOOK_EXTENSIONS = {".txt", ".json", ".pdf", ".xlsx"}
@@ -90,6 +104,18 @@ def is_allowed_file(filename: str, allowed_extensions: set) -> bool:
 def index():
     """Serve the single-page dashboard."""
     return render_template("index.html")
+
+
+@app.route("/health", methods=["GET"])
+@app.route("/healthz", methods=["GET"])
+def health():
+    """Liveness/readiness health check for Render, load balancers, and monitoring."""
+    return jsonify({
+        "status": "healthy",
+        "app_name": "PackGuard AI",
+        "version": "1.0.0",
+        "gemini_configured": bool(analyzer.get_gemini_api_key())
+    }), 200
 
 
 @app.route("/api/status", methods=["GET"])
@@ -291,11 +317,13 @@ def handle_internal_error(e):
 
 
 if __name__ == "__main__":
-    port = int(os.getenv("FLASK_PORT", 5000))
+    # Render and cloud platforms supply $PORT; fallback to FLASK_PORT or 5000
+    port = int(os.getenv("PORT", os.getenv("FLASK_PORT", 5000)))
+    host = os.getenv("FLASK_HOST", "0.0.0.0")
     debug = os.getenv("FLASK_DEBUG", "false").lower() in ("true", "1", "yes")
     print(f"==================================================")
     print(f"  PackGuard AI - Packaging Artwork Checker")
-    print(f"  Listening on: http://127.0.0.1:{port}")
+    print(f"  Listening on: http://{host}:{port}")
     print(f"  Gemini Configured: {bool(analyzer.get_gemini_api_key())}")
     print(f"==================================================")
-    app.run(host="127.0.0.1", port=port, debug=debug)
+    app.run(host=host, port=port, debug=debug)

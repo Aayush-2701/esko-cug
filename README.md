@@ -85,7 +85,7 @@ FLASK_PORT=5000
 FLASK_DEBUG=false
 ```
 
-### 4. Run the Application
+### 4. Run the Application Locally
 
 Start the Flask server:
 ```bash
@@ -96,6 +96,23 @@ Open your browser and navigate to:
 ```text
 http://127.0.0.1:5000
 ```
+
+---
+
+## Deploy to Render (Production)
+
+PackGuard AI is fully optimized for 1-click cloud deployment on [Render](https://render.com/).
+
+### Quick Deploy via Render Blueprint:
+1. Push this repository to GitHub or GitLab.
+2. In the Render Dashboard, select **New +** -> **Blueprint**.
+3. Select your repository. Render automatically reads [`render.yaml`](render.yaml) to configure:
+   - **Build Command**: `pip install --upgrade pip && pip install -r requirements.txt`
+   - **Start Command**: `python -m gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 120`
+   - **Health Check Path**: `/health`
+4. Set your `GEMINI_API_KEY` in Render's environment settings and click **Apply**.
+
+For complete manual setup instructions and production considerations, refer to [**DEPLOYMENT.md**](DEPLOYMENT.md).
 
 ---
 
