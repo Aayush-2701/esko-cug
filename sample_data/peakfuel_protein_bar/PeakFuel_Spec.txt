@@ -1,0 +1,14 @@
+PACKAGING SPECIFICATION & REGULATORY AUDIT RULEBOOK
+Product: Dark Chocolate Almond Crunch Protein Bar
+Brand: PeakFuel
+Market: United States (Nutrition Bars / Confectionery)
+SKU / BPN: PF-BAR-ALMOND-60G
+Master GS1 Barcode: 0 98765 43210 9
+
+1. MANDATORY REQUIREMENTS & SPECIFICATION LIMITS
+- Brand: "PeakFuel"
+- Identity Statement: "Dark Chocolate Almond Crunch Protein Bar"
+- Net Weight Declaration: "60g (2.12 oz)" - MUST declare both avoirdupois ounces and metric grams per 21 CFR § 101.105.
+- Mandatory Allergen Clause: Direct recipe ingredients include Chopped Almonds and Almond Butter. Under FALCPA / 21 U.S.C. 343(w), package MUST declare "CONTAINS: ALMONDS". A vague "May contain nuts" disclaimer is legally defective.
+- Health / Functional Claims: Only "20g Plant Protein", "Non-GMO", "Gluten Free" are approved. Any disease prevention claim is strictly prohibited.
+- Barcode: Must exactly match GS1 registered UPC 0 98765 43210 9.

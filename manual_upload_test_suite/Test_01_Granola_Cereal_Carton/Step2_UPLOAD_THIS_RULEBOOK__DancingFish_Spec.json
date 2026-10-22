@@ -1,0 +1,50 @@
+{
+  "brand": "Dancing Fish",
+  "product_name": "Granola Berry Crunch",
+  "net_weight": "480g",
+  "net_weight_us_required": "480g (16.9 oz)",
+  "serving_size": "60g",
+  "servings_per_container": "8",
+  "barcode_upc": "1 20000 00003 6",
+  "bpn_sku": "DF-BERRY-480G-US",
+  "mandatory_fields": [
+    "Product Name",
+    "Brand",
+    "Net Quantity / Weight",
+    "Nutrition Facts Panel",
+    "Ingredients List",
+    "Allergen Information Statement",
+    "Manufacturer / Distributor Information",
+    "Storage Instructions",
+    "UPC Barcode"
+  ],
+  "expected_ingredients": [
+    "Organic Wholegrain Oat Flakes (79%)",
+    "Almonds",
+    "Pecans",
+    "Sunflower Seeds",
+    "Vegetable Oils",
+    "Dried Blueberries",
+    "Cranberries",
+    "Honey (9%)",
+    "Coconut Sugar",
+    "Himalayan Pink Salt"
+  ],
+  "allergen_requirements": {
+    "contained_allergens": ["Almonds (Tree Nut)", "Pecans (Tree Nut)", "Oats / Gluten"],
+    "advisory_allergens": ["Brazil Nuts", "Walnuts"],
+    "rule": "Per FDA FALCPA regulations, tree nuts used as ingredients (Almonds, Pecans) must be listed in the ingredient declaration or in an explicit 'Contains: Almonds, Pecans' statement. An advisory 'May Contain' alone is insufficient for direct ingredients."
+  },
+  "net_quantity_rules": {
+    "rule": "For US packaging under 21 CFR 101.105, net quantity on the Principal Display Panel (PDP) must include dual units: both imperial avoirdupois (e.g. 16.9 oz / 1.05 lb) and metric (480 g). Declaring only metric grams without ounces does not meet US PDP standards."
+  },
+  "approved_claims": [
+    "USDA Organic",
+    "Certified Vegan",
+    "GMO Free",
+    "No Added Sugar",
+    "Oven Baked",
+    "High-Grain"
+  ],
+  "storage_text": "Store in a cool, dry place. Once opened, keep packaging closed and eat within a month or by date shown, for best before, see base of pack."
+}

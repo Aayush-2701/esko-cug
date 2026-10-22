@@ -1,0 +1,46 @@
+{
+  "brand": "LittleSprout Organics",
+  "product_name": "Organic Apple Mango Carrot Baby Puree",
+  "net_weight": "99g (3.5 oz)",
+  "net_weight_us_required": "99g (3.5 oz)",
+  "serving_size": "1 Pouch (99g)",
+  "servings_per_container": "1",
+  "barcode_upc": "7 12345 67890 1",
+  "bpn_sku": "LS-PUREE-APPLMNG-99G",
+  "mandatory_fields": [
+    "Product Name",
+    "Brand",
+    "Net Quantity / Weight",
+    "Nutrition Facts Panel",
+    "Ingredients List",
+    "Allergen Information Statement",
+    "Manufacturer / Distributor Information",
+    "Storage Instructions",
+    "UPC Barcode"
+  ],
+  "expected_ingredients": [
+    "Organic Apple Puree (55%)",
+    "Organic Mango Puree (30%)",
+    "Organic Carrot Puree (15%)",
+    "Organic Lemon Juice Concentrate"
+  ],
+  "allergen_requirements": {
+    "contained_allergens": [],
+    "advisory_allergens": [],
+    "rule": "Product is naturally allergen-free. Allergen statement should confirm allergen-free status or state 'Contains no major food allergens'."
+  },
+  "net_quantity_rules": {
+    "rule": "Dual unit declaration required on bottom 30% of PDP: '99g (3.5 oz)'."
+  },
+  "approved_claims": [
+    "USDA Organic",
+    "Non-GMO",
+    "No Added Sugars",
+    "BPA-Free Packaging",
+    "Stage 2 (6+ Months)"
+  ],
+  "safety_warnings": {
+    "rule": "Mandatory FDA infant pouch warning: 'CHOKING HAZARD: Keep cap out of reach of children under 3 years. Do not microwave pouch.'"
+  },
+  "storage_text": "Store unopened at room temperature. Refrigerate within 1 hour after opening and serve within 24 hours."
+}

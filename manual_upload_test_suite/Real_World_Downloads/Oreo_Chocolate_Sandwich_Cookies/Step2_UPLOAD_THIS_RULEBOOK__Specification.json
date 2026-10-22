@@ -1,0 +1,21 @@
+{
+  "brand": "Oreo, Nabisco",
+  "product_name": "oreo cookies shelf",
+  "net_weight": "14.3 oz (405 g)",
+  "net_weight_us_required": "14.3 oz (405 g)",
+  "barcode_upc": "0044000032029",
+  "ingredients_list": "unbleached enriched flour (wheat flour, niacin, reduced iron, thiamine mononitrate {vitamin b1}, riboflavin {vitamin b2}, folic acid), sugar, palm and/or canola oil, cocoa (processed with alkali), high fructose corn syrup, leavening (baking soda and/or calcium phosphate), salt, soy lecithin, chocolate, artificial flavor,",
+  "allergens": [
+    "en:gluten",
+    "en:soybeans"
+  ],
+  "mandatory_fields": [
+    "Product Name",
+    "Brand",
+    "Net Quantity / Weight",
+    "Nutrition Facts Panel",
+    "Ingredients List",
+    "Allergen Information Statement",
+    "UPC Barcode"
+  ]
+}

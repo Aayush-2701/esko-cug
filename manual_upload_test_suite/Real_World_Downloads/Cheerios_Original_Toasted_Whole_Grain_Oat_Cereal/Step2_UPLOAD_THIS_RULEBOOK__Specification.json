@@ -1,0 +1,25 @@
+{
+  "brand": "General Mills",
+  "product_name": "Gmills hny nut cheerios sweetened whl grn oat cereal",
+  "net_weight": "347 g",
+  "net_weight_us_required": "347 g",
+  "barcode_upc": "0016000275270",
+  "ingredients_list": "/ whole grain oats, sugar, oat bran, corn starch, honey, brown sugar syrup, salt, tripotassium phosphate, canola oil, natural almond flavor, vitamin e (mixed tocopherols) added to preserve freshness,vitamins and minerals: calcium carbonate, zinc and iron (mineral nutrients), vitamin c (sodium ascorbate), a b vitamin (niacinamide), vitamin b6 (pyridoxine hydrochloride), vitamin b2 (riboflavin), vitamin b1 (thiamin mononitrate), vitamin a (palmitate), a b vitamin (folic acid), vitamin b12, vitamin d3,",
+  "allergens": [],
+  "nutrition_summary": {
+    "energy_kcal": 393,
+    "fat_100g": 5.36,
+    "carbohydrates_100g": 78.57,
+    "proteins_100g": 7.14,
+    "sodium_100g": 0.571
+  },
+  "mandatory_fields": [
+    "Product Name",
+    "Brand",
+    "Net Quantity / Weight",
+    "Nutrition Facts Panel",
+    "Ingredients List",
+    "Allergen Information Statement",
+    "UPC Barcode"
+  ]
+}

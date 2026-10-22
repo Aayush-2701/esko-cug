@@ -1,0 +1,50 @@
+{
+  "brand": "PeakFuel",
+  "product_name": "Dark Chocolate Almond Crunch Protein Bar",
+  "net_weight": "60g",
+  "net_weight_us_required": "60g (2.12 oz)",
+  "serving_size": "1 Bar (60g)",
+  "servings_per_container": "1",
+  "barcode_upc": "0 98765 43210 9",
+  "bpn_sku": "PF-BAR-ALMOND-60G",
+  "mandatory_fields": [
+    "Product Name",
+    "Brand",
+    "Net Quantity / Weight",
+    "Nutrition Facts Panel",
+    "Ingredients List",
+    "Allergen Information Statement",
+    "Manufacturer / Distributor Information",
+    "Storage Instructions",
+    "UPC Barcode"
+  ],
+  "expected_ingredients": [
+    "Brown Rice Protein",
+    "Pea Protein",
+    "Dark Chocolate Chips (Cocoa Butter, Sugar)",
+    "Almond Butter",
+    "Chopped Almonds",
+    "Tapioca Syrup",
+    "Sea Salt"
+  ],
+  "allergen_requirements": {
+    "contained_allergens": [
+      "Almonds (Tree Nut)"
+    ],
+    "advisory_allergens": [
+      "Peanuts",
+      "Soy"
+    ],
+    "rule": "Per FDA FALCPA regulations, tree nuts used as recipe ingredients (Almonds) must be explicitly disclosed in the ingredients list and declared in a 'Contains: Almonds' statement. Generic 'May contain nuts' advisory alone is a statutory violation."
+  },
+  "net_quantity_rules": {
+    "rule": "Per 21 CFR \u00a7 101.105, net quantity on the Principal Display Panel must display dual units (US Customary ounces + metric grams): '60g (2.12 oz)'. Displaying metric grams alone fails US food labeling requirements."
+  },
+  "approved_claims": [
+    "20g Plant Protein",
+    "Non-GMO Project Verified",
+    "Gluten Free"
+  ],
+  "unapproved_claims_flag": "No drug, disease prevention, or unapproved structure/function claims are permitted.",
+  "storage_text": "Store in a cool, dry place away from direct sunlight."
+}

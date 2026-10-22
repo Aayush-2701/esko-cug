@@ -1,0 +1,26 @@
+PACKAGING SPECIFICATION & REGULATORY RULEBOOK
+Product: Granola Berry Crunch
+Brand: Dancing Fish
+Region: United States (Retail Market)
+SKU / BPN: DF-BERRY-480G-US
+UPC / Barcode: 1 20000 00003 6
+
+1. MANDATORY DISPLAY ELEMENTS
+- Brand Name: "Dancing Fish"
+- Statement of Identity / Product Name: "Granola Berry Crunch"
+- Net Weight Declaration: "480g (16.9 oz)" - Must include both metric (g) and US Customary / Avoirdupois (oz) on the Principal Display Panel (PDP).
+- Nutrition Facts Panel: US FDA Standard Vertical format with 8 servings per container (serving size approx. 60g).
+- Complete Ingredients List: Must declare all components in descending order of predominance by weight.
+- Allergen Warning Statement: Explicit declaration for tree nuts (Almonds, Pecans).
+- Distributor / Manufacturer Address: "Produced by Dancing Fish Granola Co."
+- Country of Origin / Market: United States
+- Storage Conditions: "Store in a cool, dry place. Once opened, keep packaging closed and eat within a month or by date shown."
+
+2. ALLERGEN & INGREDIENT RULES
+- Direct Ingredients: Organic Wholegrain Oat Flakes (79%), Almonds, Pecans, Sunflower Seeds, Vegetable Oils, Dried Blueberries, Cranberries, Honey (9%), Coconut Sugar, Crystallized Ginger, Himalayan Pink Salt.
+- Allergen Labeling Requirement: Because Almonds and Pecans are recipe ingredients, they must appear in an explicit "CONTAINS: ALMONDS, PECANS" notice or be explicitly bolded in the ingredient statement. A generic advisory phrase ("May Contain Almonds") is legally insufficient for direct ingredients.
+- Cross-contact advisory: May contain Brazil Nuts, Walnuts, or Cereals Containing Gluten.
+
+3. CLAIMS AND CERTIFICATIONS
+- Approved Claims: "USDA Organic", "Certified Vegan", "GMO Free", "No Added Sugar", "Oven Baked", "High-Grain".
+- Any unapproved health claims or missing cert marks must be flagged.

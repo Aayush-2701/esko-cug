@@ -1,0 +1,49 @@
+{
+  "brand": "Apex Brew",
+  "product_name": "Organic Cold Brew Oat Milk Latte",
+  "net_weight": "12 fl oz (355 mL)",
+  "net_weight_us_required": "12 fl oz (355 mL)",
+  "serving_size": "1 Can (355 mL)",
+  "servings_per_container": "1",
+  "barcode_upc": "8 50012 34567 8",
+  "bpn_sku": "AB-OATLATTE-355ML-US",
+  "mandatory_fields": [
+    "Product Name",
+    "Brand",
+    "Net Quantity / Weight",
+    "Nutrition Facts Panel",
+    "Ingredients List",
+    "Allergen Information Statement",
+    "Manufacturer / Distributor Information",
+    "Storage Instructions",
+    "UPC Barcode"
+  ],
+  "expected_ingredients": [
+    "Organic Cold Brew Coffee (Water, Organic Arabica Coffee Beans)",
+    "Organic Oat Milk (Water, Organic Whole Grain Oats)",
+    "Organic Cane Sugar",
+    "Organic Sunflower Oil",
+    "Sea Salt",
+    "Organic Vanilla Extract"
+  ],
+  "allergen_requirements": {
+    "contained_allergens": [
+      "Gluten-Free Oats"
+    ],
+    "advisory_allergens": [
+      "Tree Nuts (Facility Advisory)"
+    ],
+    "rule": "Made with gluten-free certified oats. Dairy-free. Advisory: Produced in a facility that also processes tree nuts."
+  },
+  "net_quantity_rules": {
+    "rule": "Per 21 CFR \u00a7 101.105, liquid beverage commodities must declare net contents in fluid measure: dual unit declaration '12 fl oz (355 mL)' located on lower 30% of PDP."
+  },
+  "approved_claims": [
+    "USDA Organic",
+    "Certified Vegan",
+    "Dairy Free",
+    "Non-GMO",
+    "150mg Natural Caffeine"
+  ],
+  "storage_text": "Perishable. Keep Refrigerated. Shake gently before opening."
+}
